@@ -1,0 +1,1194 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1.0"
+  >
+
+  <meta
+    name="description"
+    content="Aya Belgharat — AI & Machine Learning Engineer, Semiconductor R&D and PhD Researcher."
+  >
+
+  <title>Aya Belgharat — AI · ML · Semiconductor</title>
+
+  <!-- Tailwind -->
+  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
+  <!-- Three.js -->
+  <script type="importmap">
+  {
+    "imports": {
+      "three": "https://cdn.jsdelivr.net/npm/three@0.180.0/build/three.module.js"
+    }
+  }
+  </script>
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+
+  <link
+    href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@300;400;500&family=Inter:wght@300;400;500;600;700;800;900&display=swap"
+    rel="stylesheet"
+  >
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="./style-red-white.css">
+</head>
+
+
+<body>
+
+
+  <!-- =====================================================
+       BACKGROUND
+  ====================================================== -->
+
+  <div class="background-grid"></div>
+
+  <div class="red-light red-light-1"></div>
+  <div class="red-light red-light-2"></div>
+
+
+  <!-- =====================================================
+       CURSOR
+  ====================================================== -->
+
+  <div id="cursor">
+    <div id="cursor-dot"></div>
+    <div id="cursor-ring"></div>
+  </div>
+
+
+  <!-- =====================================================
+       NAVBAR
+  ====================================================== -->
+
+  <header class="navbar">
+
+    <nav>
+
+      <a href="#home" class="logo">
+        A<span>B</span>
+      </a>
+
+
+      <div class="nav-links">
+
+        <a href="#about">ABOUT</a>
+        <a href="#research">RESEARCH</a>
+        <a href="#phd">PHD</a>
+        <a href="#experience">EXPERIENCE</a>
+        <a href="#projects">PROJECTS</a>
+        <a href="#contact">CONTACT</a>
+
+      </div>
+
+
+      <a
+        href="./assets/Aya-Belgharat-CV.pdf"
+        target="_blank"
+        class="cv-button"
+      >
+        CV <span>↗</span>
+      </a>
+
+    </nav>
+
+  </header>
+
+
+
+  <!-- =====================================================
+       HERO
+  ====================================================== -->
+
+  <main id="home">
+
+    <section class="hero">
+
+
+      <!-- THREE JS -->
+
+      <canvas
+        id="three-canvas"
+        aria-hidden="true"
+      ></canvas>
+
+
+      <!-- LEFT -->
+
+      <div class="hero-left">
+
+        <div class="availability">
+
+          <span></span>
+
+          AVAILABLE FOR
+          RESEARCH · R&D · AI
+
+        </div>
+
+
+        <p class="hero-kicker">
+          AI & MACHINE LEARNING ENGINEER
+        </p>
+
+
+        <h1>
+
+          AYA
+
+          <span>
+            BELGHARAT
+          </span>
+
+        </h1>
+
+
+        <p class="hero-description">
+
+          Building intelligent systems for
+
+          <strong>
+            computer vision
+          </strong>,
+
+          <strong>
+            semiconductor inspection
+          </strong>
+
+          and scientific discovery.
+
+        </p>
+
+
+        <div class="hero-buttons">
+
+          <a
+            href="#research"
+            class="btn-primary"
+          >
+            Explore Research
+            <span>↗</span>
+          </a>
+
+
+          <a
+            href="#contact"
+            class="btn-outline"
+          >
+            Contact
+          </a>
+
+        </div>
+
+
+        <div class="hero-meta">
+
+          <div>
+            <small>LOCATION</small>
+            <strong>Sousse, Tunisia</strong>
+          </div>
+
+          <div>
+            <small>RESEARCH</small>
+            <strong>AI × SEMICONDUCTORS</strong>
+          </div>
+
+          <div>
+            <small>PHD</small>
+            <strong>2026 — 2029</strong>
+          </div>
+
+        </div>
+
+      </div>
+
+
+
+      <!-- =================================================
+           PERSON IMAGE
+      ================================================== -->
+
+      <div
+        class="person-wrapper"
+        id="person-wrapper"
+      >
+
+        <div class="person-orbit orbit-1"></div>
+        <div class="person-orbit orbit-2"></div>
+        <div class="person-orbit orbit-3"></div>
+
+
+        <div class="person-glow"></div>
+
+
+        <div class="person-card">
+
+          <div class="person-number">
+            01
+          </div>
+
+    <div id="ai-emojis"></div>
+          <img
+            src="./public/frames/106767035.webp"
+            alt="Aya Belgharat"
+            id="aya-photo"
+          >
+
+
+          <div class="person-label">
+
+            <span>
+              AI / ML
+            </span>
+
+            <strong>
+              RESEARCHER
+            </strong>
+
+          </div>
+
+        </div>
+
+
+        <!-- FLOATING ELEMENTS -->
+
+        <div class="floating-chip chip-1">
+          <span>AI</span>
+        </div>
+
+        <div class="floating-chip chip-2">
+          <span>CV</span>
+        </div>
+
+        <div class="floating-chip chip-3">
+          <span>ML</span>
+        </div>
+
+        <div class="floating-chip chip-4">
+          <span>SEM</span>
+        </div>
+
+      </div>
+
+
+      <!-- SCROLL -->
+
+      <div class="scroll-down">
+
+        <span>
+          SCROLL
+        </span>
+
+        <div></div>
+
+      </div>
+
+
+    </section>
+
+
+
+    <!-- =====================================================
+         ABOUT
+    ====================================================== -->
+
+    <section
+      id="about"
+      class="section white-section"
+    >
+
+      <div class="section-top">
+
+        <span>
+          01
+        </span>
+
+        <p>
+          ABOUT
+        </p>
+
+      </div>
+
+
+      <div class="about-layout">
+
+        <div>
+
+          <p class="red-label">
+            PROFILE
+          </p>
+
+          <h2>
+
+            Engineering
+
+            <span>
+              intelligent
+            </span>
+
+            vision systems.
+
+          </h2>
+
+        </div>
+
+
+        <div class="about-content">
+
+          <p>
+
+            AI & Machine Learning Engineer focused on
+            computer vision, semiconductor inspection,
+            deep learning and scientific data analysis.
+
+          </p>
+
+
+          <p>
+
+            During her R&D experience at
+            <strong>imec</strong>, Aya worked on
+            semiconductor wafer inspection using
+            SEM, TEM and advanced imaging techniques.
+
+          </p>
+
+
+          <p>
+
+            Her research combines computer vision,
+            deep learning, Vision Transformers and
+            explainable AI.
+
+          </p>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+
+    <!-- =====================================================
+         RESEARCH
+    ====================================================== -->
+
+    <section
+      id="research"
+      class="section black-section"
+    >
+
+      <div class="section-top">
+
+        <span>
+          02
+        </span>
+
+        <p>
+          RESEARCH
+        </p>
+
+      </div>
+
+
+      <div class="research-intro">
+
+        <p class="red-label">
+          RESEARCH FOCUS
+        </p>
+
+        <h2>
+
+          AI for
+
+          <span>
+            advanced
+          </span>
+
+          semiconductors.
+
+        </h2>
+
+      </div>
+
+
+      <div class="research-grid">
+
+
+        <article class="research-box">
+
+          <span class="box-number">
+            01
+          </span>
+
+          <div class="research-symbol">
+            ◉
+          </div>
+
+          <h3>
+            DEFECT DETECTION
+          </h3>
+
+          <p>
+            Automated detection and classification
+            of semiconductor defects using deep
+            learning.
+          </p>
+
+          <div class="tags">
+            <span>CNN</span>
+            <span>SAHI</span>
+            <span>ViT</span>
+          </div>
+
+        </article>
+
+
+        <article class="research-box">
+
+          <span class="box-number">
+            02
+          </span>
+
+          <div class="research-symbol">
+            ◎
+          </div>
+
+          <h3>
+            COMPUTER VISION
+          </h3>
+
+          <p>
+            Image processing and pattern recognition
+            for SEM, TEM and inspection systems.
+          </p>
+
+          <div class="tags">
+            <span>OpenCV</span>
+            <span>SEM</span>
+            <span>TEM</span>
+          </div>
+
+        </article>
+
+
+        <article class="research-box">
+
+          <span class="box-number">
+            03
+          </span>
+
+          <div class="research-symbol">
+            ✦
+          </div>
+
+          <h3>
+            EXPLAINABLE AI
+          </h3>
+
+          <p>
+            Interpretable deep learning approaches
+            for scientific and industrial analysis.
+          </p>
+
+          <div class="tags">
+            <span>XAI</span>
+            <span>DL</span>
+            <span>ML</span>
+          </div>
+
+        </article>
+
+
+        <article class="research-box">
+
+          <span class="box-number">
+            04
+          </span>
+
+          <div class="research-symbol">
+            ⌁
+          </div>
+
+          <h3>
+            PROCESS ANALYSIS
+          </h3>
+
+          <p>
+            Data-driven process characterization,
+            optimization and defectivity analysis.
+          </p>
+
+          <div class="tags">
+            <span>Analytics</span>
+            <span>Metrology</span>
+            <span>R&D</span>
+          </div>
+
+        </article>
+
+      </div>
+
+    </section>
+
+
+
+    <!-- =====================================================
+         PHD
+    ====================================================== -->
+
+    <section
+      id="phd"
+      class="section red-section"
+    >
+
+      <div class="phd-background">
+        PHD
+      </div>
+
+
+      <div class="section-top">
+
+        <span>
+          03
+        </span>
+
+        <p>
+          PHD RESEARCH
+        </p>
+
+      </div>
+
+
+      <div class="phd-content">
+
+        <div>
+
+          <p class="black-label">
+            ENISO · TUNISIA
+          </p>
+
+          <h2>
+            PhD Researcher
+          </h2>
+
+          <p class="phd-year">
+            2026 — 2029
+          </p>
+
+        </div>
+
+
+        <div class="phd-topic">
+
+          <span>
+            RESEARCH TOPIC
+          </span>
+
+          <h3>
+
+            Explainable Deep Learning for
+            Semiconductor Wafer Defect Detection
+            and Classification Using Computer Vision
+
+          </h3>
+
+
+          <div class="phd-info">
+
+            <div>
+              <small>START</small>
+              <strong>SEP 2026</strong>
+            </div>
+
+            <div>
+              <small>FIELD</small>
+              <strong>AI / CV</strong>
+            </div>
+
+            <div>
+              <small>DOMAIN</small>
+              <strong>SEMICONDUCTORS</strong>
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+
+    <!-- =====================================================
+         EXPERIENCE
+    ====================================================== -->
+
+    <section
+      id="experience"
+      class="section white-section"
+    >
+
+      <div class="section-top">
+
+        <span>
+          04
+        </span>
+
+        <p>
+          EXPERIENCE
+        </p>
+
+      </div>
+
+
+      <div class="experience-list">
+
+
+        <article class="experience-item">
+
+          <div class="experience-date">
+            2024 — 2025
+          </div>
+
+          <div>
+
+            <p class="red-label">
+              IMEC · LEUVEN
+            </p>
+
+            <h3>
+              R&D Engineer · Machine Learning
+            </h3>
+
+            <p>
+              Computer vision and ML/DL solutions
+              for semiconductor wafer inspection
+              and metrology.
+            </p>
+
+            <div class="tags light-tags">
+              <span>SEM</span>
+              <span>TEM</span>
+              <span>Computer Vision</span>
+              <span>Deep Learning</span>
+            </div>
+
+          </div>
+
+        </article>
+
+
+        <article class="experience-item">
+
+          <div class="experience-date">
+            2025 — PRESENT
+          </div>
+
+          <div>
+
+            <p class="red-label">
+              FREELANCE
+            </p>
+
+            <h3>
+              AI Engineer · AI Instructor
+            </h3>
+
+            <p>
+              AI solutions, OCR automation,
+              RAG systems, AI agents and
+              predictive analytics.
+            </p>
+
+            <div class="tags light-tags">
+              <span>Python</span>
+              <span>PyTorch</span>
+              <span>RAG</span>
+              <span>LLM</span>
+            </div>
+
+          </div>
+
+        </article>
+
+
+        <article class="experience-item">
+
+          <div class="experience-date">
+            2023
+          </div>
+
+          <div>
+
+            <p class="red-label">
+              DRÄXLMAIER
+            </p>
+
+            <h3>
+              Engineering Intern
+            </h3>
+
+            <p>
+              Power consumption evaluation of
+              IoT wireless communication modules.
+            </p>
+
+          </div>
+
+        </article>
+
+
+        <article class="experience-item">
+
+          <div class="experience-date">
+            2022
+          </div>
+
+          <div>
+
+            <p class="red-label">
+              STEG
+            </p>
+
+            <h3>
+              Engineering Intern
+            </h3>
+
+            <p>
+              Automated industrial filter,
+              HMI and Grafcet control logic.
+            </p>
+
+          </div>
+
+        </article>
+
+      </div>
+
+    </section>
+
+
+
+    <!-- =====================================================
+         PROJECTS
+    ====================================================== -->
+
+    <section
+      id="projects"
+      class="section black-section"
+    >
+
+      <div class="section-top">
+
+        <span>
+          05
+        </span>
+
+        <p>
+          PROJECTS
+        </p>
+
+      </div>
+
+
+      <div class="project-grid">
+
+
+        <article class="project-main">
+
+          <div class="project-visual">
+
+            <div class="wafer-3d">
+
+              <div class="wafer-ring ring-a"></div>
+              <div class="wafer-ring ring-b"></div>
+              <div class="wafer-ring ring-c"></div>
+
+              <div class="wafer-center"></div>
+
+            </div>
+
+          </div>
+
+
+          <div class="project-details">
+
+            <span>
+              01 · SEMICONDUCTOR
+            </span>
+
+            <h3>
+              Wafer Inspection
+            </h3>
+
+            <p>
+              Computer vision and ML/DL pipeline
+              for semiconductor defect detection
+              and classification.
+            </p>
+
+            <div class="tags">
+              <span>Python</span>
+              <span>OpenCV</span>
+              <span>PyTorch</span>
+            </div>
+
+          </div>
+
+        </article>
+
+
+        <article class="project-small">
+
+          <span>
+            02
+          </span>
+
+          <h3>
+            FactuBot
+          </h3>
+
+          <p>
+            AI-powered invoice extraction,
+            OCR and verification.
+          </p>
+
+          <div class="tags">
+            <span>Python</span>
+            <span>OCR</span>
+            <span>Streamlit</span>
+          </div>
+
+        </article>
+
+
+        <article class="project-small">
+
+          <span>
+            03
+          </span>
+
+          <h3>
+            IoT ECG
+          </h3>
+
+          <p>
+            Heart monitoring system using
+            ESP32 and Firebase.
+          </p>
+
+          <div class="tags">
+            <span>ESP32</span>
+            <span>IoT</span>
+            <span>Firebase</span>
+          </div>
+
+        </article>
+
+
+        <article class="project-small">
+
+          <span>
+            04
+          </span>
+
+          <h3>
+            Predictive Analytics
+          </h3>
+
+          <p>
+            Customer review analysis and
+            predictive modeling.
+          </p>
+
+          <div class="tags">
+            <span>Python</span>
+            <span>ML</span>
+          </div>
+
+        </article>
+
+      </div>
+
+    </section>
+
+
+
+    <!-- =====================================================
+         PUBLICATIONS
+    ====================================================== -->
+
+    <section
+      id="publications"
+      class="section white-section"
+    >
+
+      <div class="section-top">
+
+        <span>
+          06
+        </span>
+
+        <p>
+          PUBLICATIONS
+        </p>
+
+      </div>
+
+
+      <div class="publication-list">
+
+
+        <article class="publication">
+
+          <span>
+            01
+          </span>
+
+          <div>
+
+            <p class="red-label">
+              SPIE · 2025
+            </p>
+
+            <h3>
+
+              A ViT-Based Approach for Enhanced
+              Defect Classification in Nano-Ridge
+              Engineering Using Multi-Resolution Images
+
+            </h3>
+
+            <p>
+              B. Dey · T. Tandecki · A. Belgharat ·
+              P. Swekis · R. Alcotte · Y. Mols ·
+              B. Kunert · S. Halder
+            </p>
+
+
+            <a
+              href="https://spie.org/advanced-lithography/presentation/A-ViT-Based-Approach-for-Enhanced-Defect-Classification-in-Nano/13426-128"
+              target="_blank"
+              rel="noopener"
+            >
+              VIEW PAPER ↗
+            </a>
+
+          </div>
+
+        </article>
+
+
+        <article class="publication">
+
+          <span>
+            02
+          </span>
+
+          <div>
+
+            <p class="red-label">
+              SPIE
+            </p>
+
+            <h3>
+
+              Towards Robust Defect Inspection
+              in Advanced Node Semiconductors
+              via Continual Learning
+
+            </h3>
+
+            <p>
+              B. Dey · A. Prasad · A. Belgharat ·
+              V. Blanco · S. Halder
+            </p>
+
+
+            <a
+              href="https://doi.org/10.1117/12.3052286"
+              target="_blank"
+              rel="noopener"
+            >
+              DOI ↗
+            </a>
+
+          </div>
+
+        </article>
+
+      </div>
+
+    </section>
+
+
+
+    <!-- =====================================================
+         SKILLS
+    ====================================================== -->
+
+    <section class="skills">
+
+      <div class="skills-track">
+
+        <span>PYTHON</span>
+        <b>×</b>
+
+        <span>PYTORCH</span>
+        <b>×</b>
+
+        <span>COMPUTER VISION</span>
+        <b>×</b>
+
+        <span>SEMICONDUCTORS</span>
+        <b>×</b>
+
+        <span>OPENCV</span>
+        <b>×</b>
+
+        <span>VISION TRANSFORMERS</span>
+        <b>×</b>
+
+        <span>MACHINE LEARNING</span>
+        <b>×</b>
+
+        <span>DEEP LEARNING</span>
+        <b>×</b>
+
+
+        <!-- DUPLICATE -->
+
+        <span>PYTHON</span>
+        <b>×</b>
+
+        <span>PYTORCH</span>
+        <b>×</b>
+
+        <span>COMPUTER VISION</span>
+        <b>×</b>
+
+        <span>SEMICONDUCTORS</span>
+        <b>×</b>
+
+        <span>OPENCV</span>
+        <b>×</b>
+
+        <span>VISION TRANSFORMERS</span>
+        <b>×</b>
+
+        <span>MACHINE LEARNING</span>
+        <b>×</b>
+
+        <span>DEEP LEARNING</span>
+
+      </div>
+
+    </section>
+
+
+
+    <!-- =====================================================
+         CONTACT
+    ====================================================== -->
+
+    <section
+      id="contact"
+      class="contact"
+    >
+
+      <div class="contact-circle"></div>
+
+
+      <p class="red-label">
+        GET IN TOUCH
+      </p>
+
+
+      <h2>
+
+        Let's build
+
+        <span>
+          the future.
+        </span>
+
+      </h2>
+
+
+      <p>
+        Research · AI · Computer Vision · Semiconductors
+      </p>
+
+
+      <a
+        href="mailto:aya.belgharat.ing@gmail.com"
+        class="email"
+      >
+        aya.belgharat.ing@gmail.com
+      </a>
+
+
+      <div class="social-links">
+
+        <a
+          href="https://linkedin.com/in/aya-belgharat"
+          target="_blank"
+          rel="noopener"
+        >
+          LINKEDIN ↗
+        </a>
+
+        <a
+          href="https://github.com/AyaBelgharat"
+          target="_blank"
+          rel="noopener"
+        >
+          GITHUB ↗
+        </a>
+
+      </div>
+
+    </section>
+
+  </main>
+
+
+
+  <!-- =====================================================
+       FOOTER
+  ====================================================== -->
+
+  <footer>
+
+    <span>
+      © 2026 AYA BELGHARAT
+    </span>
+
+    <span>
+      AI · ML · COMPUTER VISION · SEMICONDUCTORS
+    </span>
+
+  </footer>
+
+
+
+  <!-- JAVASCRIPT -->
+
+  <script
+    type="module"
+    src="./app.js"
+  ></script>
+
+</body>
+
+</html>
